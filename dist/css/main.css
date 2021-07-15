@@ -1,6 +1,6 @@
 @font-face {
   font-family: "title_font";
-  src: url("/dist/fonts/Linotype - HelveticaNeueLTPro-Roman.otf"); }
+  src: url("../fonts/Linotype - HelveticaNeueLTPro-Roman.otf"); }
 
 body {
   min-height: 500vh; }
@@ -11,7 +11,7 @@ body {
   box-sizing: border-box; }
 
 header {
-  background-image: url("/dist/images/Header_BG.png");
+  background-image: url("../images/Header_BG.png");
   margin-bottom: 1px; }
 
 ul {
@@ -56,7 +56,7 @@ ul {
     transform: translateY(2px); }
 
 .nav_sticky {
-  background-image: url("/dist/images/Header_BG.png");
+  background-image: url("../images/Header_BG.png");
   text-align: center;
   font-family: "title_font";
   padding-top: 10px;
@@ -84,7 +84,7 @@ ul {
 
 .section_one {
   padding-top: 107px;
-  background-image: url("/dist/images/Header_BG.png");
+  background-image: url("../images/Header_BG.png");
   background-size: cover;
   background-position: 0 25%; }
   .section_one .section_one_main_title {
@@ -130,7 +130,7 @@ ul {
     padding-bottom: 60px;
     padding-top: 60px; }
   .article .table_bg {
-    background-image: url("/dist/images/tableBG.png");
+    background-image: url("../images/tableBG.png");
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: 50% 10%;
@@ -179,7 +179,7 @@ ul {
       justify-content: center; }
 
 .section_two {
-  background-image: url("/dist/images/Enterprise_BG.png");
+  background-image: url("../images/Enterprise_BG.png");
   padding-left: 50vh;
   padding-bottom: 60px; }
   .section_two .title_section_two {

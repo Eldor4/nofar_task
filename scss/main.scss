@@ -4,7 +4,7 @@ $secondary-color:rgb(255, 255, 255);
 
 @font-face {
     font-family: "title_font";
-    src: url('/dist/fonts/Linotype\ -\ HelveticaNeueLTPro-Roman.otf');
+    src: url('../fonts/Linotype\ -\ HelveticaNeueLTPro-Roman.otf');
 }
 body{
     min-height: 500vh;
@@ -16,7 +16,7 @@ body{
 }
 
 header{
-    background-image: url('/dist/images/Header_BG.png');
+    background-image: url('../images/Header_BG.png');
     margin-bottom: 1px;
 
 }
@@ -74,7 +74,7 @@ ul{
 }
 
 .nav_sticky{
-   background-image: url('/dist/images/Header_BG.png');
+   background-image: url('../images/Header_BG.png');
     text-align: center;
     font-family: "title_font";
     padding-top: 10px;
@@ -108,7 +108,7 @@ ul{
 
 .section_one{
     padding-top: 107px;
-    background-image: url('/dist/images/Header_BG.png');
+    background-image: url('../images/Header_BG.png');
     background-size: cover;
     background-position: 0 25%;
 
@@ -167,7 +167,7 @@ ul{
         padding-top: 60px;
     }
     .table_bg{
-        background-image: url('/dist/images/tableBG.png');
+        background-image: url('../images/tableBG.png');
        background-size: 50%;
        background-repeat: no-repeat;
         background-position: 50% 10%;
@@ -229,7 +229,7 @@ ul{
 }
 
 .section_two{
-    background-image: url('/dist/images/Enterprise_BG.png');
+    background-image: url('../images/Enterprise_BG.png');
     padding-left:50vh ;
     padding-bottom: 60px;
     .title_section_two{
