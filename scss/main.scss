@@ -77,6 +77,8 @@ ul{
    background-image: url('/dist/images/Header_BG.png');
     text-align: center;
     font-family: "title_font";
+    padding-top: 10px;
+    padding-bottom: 10px;
 
     .li_sticky{
         display: inline-block;
@@ -90,7 +92,8 @@ ul{
     }
     .a_sticky:focus{
         color: $primary-color;
-        text-decoration: underline $primary-color;
+        // text-decoration: underline $primary-color;
+        border-bottom:$primary-color 3px solid; 
     }
 }
 //These classes are responsible for header stick

@@ -58,7 +58,9 @@ ul {
 .nav_sticky {
   background-image: url("/dist/images/Header_BG.png");
   text-align: center;
-  font-family: "title_font"; }
+  font-family: "title_font";
+  padding-top: 10px;
+  padding-bottom: 10px; }
   .nav_sticky .li_sticky {
     display: inline-block; }
   .nav_sticky .li_sticky .a_sticky {
@@ -69,7 +71,7 @@ ul {
     text-decoration: none; }
   .nav_sticky .a_sticky:focus {
     color: #c024fc;
-    text-decoration: underline #c024fc; }
+    border-bottom: #c024fc 3px solid; }
 
 .sticky {
   position: fixed;
