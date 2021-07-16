@@ -314,51 +314,86 @@ ul{
     margin-right: auto;
     display: flex;
     font-family: "title_font";
-}
-.ul_footer{
-    flex-grow: 1;
-    line-height: 2;
+    .ul_footer{
+        flex-grow: 1;
+        line-height: 2;
+        .footer_title_li{
+            color: $primary-color;
+        }
+        .fontawesome_footer_li{
+            align-items: flex-end;
+            .fa-circle {
+                cursor: pointer;
+                display: inline-block;
+                border-radius: 60px;
+                color: $secondary-color;
+                border: 9px black solid;
+                background-color: black;
+              }
+        }
+    }
+    .footer_img_container {
+        width: 70px;
+      
+        .ul_footer_img{
+          flex-grow: 1;
+          line-height: 2;
+        }
+        .winner_img{
+            max-height: 100%;
+            max-width: 100%;
+        }
+    }
+    .footer_subtitle_li{
+        line-height: 1;
+        padding-top: 20px;
+        .footer_subtitle_li_h4{
+            font-weight: bold;
+        } 
+        .footer_subtitle_li_p{
+            font-size: 10px;
+        }
+    }
+    .one_line_height{
+        padding-top: 20px;
+        line-height:1;
+    }
 }
 
-.footer_title_li{
-    color: $primary-color;
-}
-.fontawesome_footer_li{
-    align-items: flex-end;
-}
-.fa-circle {
-    cursor: pointer;
-    display: inline-block;
-    border-radius: 60px;
-    color: $secondary-color;
-    border: 9px black solid;
-    background-color: black;
+
+.chat{
+    background:none;
+    z-index: 11;
+    top: 12rem;
+    position: fixed;
+
+    .img_message{
+      cursor: pointer;
+      width: 70px; 
+    }
+    .panel_chat{
+      height: 200px;
+      width: 200px;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0px 0px 5px 0px #888888;
+      border-radius: 5px;
+      .question{
+        padding: 15px;
+      }
+      .close_btn{
+        padding: 10px;
+        top: 0;
+        font-size: 30;
+        cursor: pointer;
+      }
+    }
+    .hidden_chat{
+      visibility: hidden;
+    }
+    .visible_chat{
+      visibility: visible;
+    }
   }
-.footer_img_container {
-  width: 70px;
-}
-.winner_img{
-    max-height: 100%;
-    max-width: 100%;
-}
-.ul_footer_img{
-    flex-grow: 1;
-    line-height: 2;
-}
-.footer_subtitle_li{
-    line-height: 1;
-    padding-top: 20px;
-}
-.footer_subtitle_li h4{
-    font-weight: bold;
-} 
-.footer_subtitle_li p{
-    font-size: 10px;
-}
-.one_line_height{
-    padding-top: 20px;
-    line-height:1;
-}
 
 @media only screen and (max-width: 600px) {
     body {

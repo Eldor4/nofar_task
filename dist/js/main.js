@@ -2,8 +2,14 @@ const downnav = document.querySelector(".nav_sticky");
 const header = document.querySelector("header");
 const class_sticky = "sticky";
 const down_nav_top = downnav.offsetTop;
-let lastScroll = 0; 
+const imgMessage = document.querySelector(".img_message");
+const panelChat = document.querySelector(".panel_chat");
+const closeBtn = document.querySelector(".close_btn");
+const hiddenChat = "hidden_chat";
+const visibleChat = "visible_chat";
 
+//sticky nav
+let lastScroll = 0; 
 window.onscroll= () => {
   const currentScroll = window.pageYOffset; 
     if (currentScroll > lastScroll && window.pageYOffset > down_nav_top){
@@ -17,6 +23,16 @@ window.onscroll= () => {
   lastScroll = currentScroll;
 };
 
+//open chat
+imgMessage.onclick=()=>{
+    panelChat.classList.add(visibleChat)
+    panelChat.classList.remove(hiddenChat)
+}
+//close chat
+closeBtn.onclick=()=>{
+    panelChat.classList.add(hiddenChat)
+    panelChat.classList.remove(visibleChat)
+}
 
 
 

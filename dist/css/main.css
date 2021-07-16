@@ -249,49 +249,64 @@ ul {
   margin-right: auto;
   display: flex;
   font-family: "title_font"; }
+  .ul_footer_container .ul_footer {
+    flex-grow: 1;
+    line-height: 2; }
+    .ul_footer_container .ul_footer .footer_title_li {
+      color: #c024fc; }
+    .ul_footer_container .ul_footer .fontawesome_footer_li {
+      align-items: flex-end; }
+      .ul_footer_container .ul_footer .fontawesome_footer_li .fa-circle {
+        cursor: pointer;
+        display: inline-block;
+        border-radius: 60px;
+        color: white;
+        border: 9px black solid;
+        background-color: black; }
+  .ul_footer_container .footer_img_container {
+    width: 70px; }
+    .ul_footer_container .footer_img_container .ul_footer_img {
+      flex-grow: 1;
+      line-height: 2; }
+    .ul_footer_container .footer_img_container .winner_img {
+      max-height: 100%;
+      max-width: 100%; }
+  .ul_footer_container .footer_subtitle_li {
+    line-height: 1;
+    padding-top: 20px; }
+    .ul_footer_container .footer_subtitle_li .footer_subtitle_li_h4 {
+      font-weight: bold; }
+    .ul_footer_container .footer_subtitle_li .footer_subtitle_li_p {
+      font-size: 10px; }
+  .ul_footer_container .one_line_height {
+    padding-top: 20px;
+    line-height: 1; }
 
-.ul_footer {
-  flex-grow: 1;
-  line-height: 2; }
-
-.footer_title_li {
-  color: #c024fc; }
-
-.fontawesome_footer_li {
-  align-items: flex-end; }
-
-.fa-circle {
-  cursor: pointer;
-  display: inline-block;
-  border-radius: 60px;
-  color: white;
-  border: 9px black solid;
-  background-color: black; }
-
-.footer_img_container {
-  width: 70px; }
-
-.winner_img {
-  max-height: 100%;
-  max-width: 100%; }
-
-.ul_footer_img {
-  flex-grow: 1;
-  line-height: 2; }
-
-.footer_subtitle_li {
-  line-height: 1;
-  padding-top: 20px; }
-
-.footer_subtitle_li h4 {
-  font-weight: bold; }
-
-.footer_subtitle_li p {
-  font-size: 10px; }
-
-.one_line_height {
-  padding-top: 20px;
-  line-height: 1; }
+.chat {
+  background: none;
+  z-index: 11;
+  top: 12rem;
+  position: fixed; }
+  .chat .img_message {
+    cursor: pointer;
+    width: 70px; }
+  .chat .panel_chat {
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px #888888;
+    border-radius: 5px; }
+    .chat .panel_chat .question {
+      padding: 15px; }
+    .chat .panel_chat .close_btn {
+      padding: 10px;
+      top: 0;
+      font-size: 30;
+      cursor: pointer; }
+  .chat .hidden_chat {
+    visibility: hidden; }
+  .chat .visible_chat {
+    visibility: visible; }
 
 @media only screen and (max-width: 600px) {
   body {
