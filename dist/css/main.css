@@ -180,33 +180,33 @@ ul {
 
 .section_two {
   background-image: url("../images/Enterprise_BG.png");
-  padding-left: 50vh;
-  padding-bottom: 60px; }
+  display: grid;
+  grid-template-areas: '1';
+  grid-gap: 10px;
+  padding: 60px 30vh 60px 50vh; }
   .section_two .title_section_two {
     font-family: "title_font";
     color: white;
-    padding-top: 60px;
-    text-align: left;
-    display: inline-block;
     font-size: 1.5em;
-    font-weight: bold; }
+    font-weight: bold;
+    grid-area: 1; }
+  .section_two .section_two_container_span {
+    grid-area: 2;
+    display: flex; }
   .section_two .section_two_span {
-    color: white;
-    line-height: 2px;
-    display: inline; }
+    color: white; }
   .section_two .section_two_btn {
-    margin-left: 45vh;
     text-transform: uppercase;
     font-size: 10px;
     font-family: "title_font";
-    padding: 15px 40px;
-    display: inline;
+    padding: 10px 40px;
     background-color: #fff;
     cursor: pointer;
     border: none;
     border-radius: 3px;
     box-shadow: 0px 0px 5px 0px rgba(5, 3, 3, 0.7);
-    color: #c024fc; }
+    color: #c024fc;
+    margin-left: 33px; }
   .section_two .section_two_btn:active {
     transform: translateY(2px); }
 
@@ -292,3 +292,12 @@ ul {
 .one_line_height {
   padding-top: 20px;
   line-height: 1; }
+
+@media only screen and (max-width: 600px) {
+  body {
+    margin-top: 107px;
+    width: 90vh; }
+  .section_two {
+    padding-left: 15vh; }
+  .section_three {
+    padding-left: 15vh; } }
